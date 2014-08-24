@@ -9,12 +9,6 @@
 		Synchronize the clipboard content between multiple clients.
 	</description>
 
-	<parent>
-		<groupId>org.sonatype.oss</groupId>
-		<artifactId>oss-parent</artifactId>
-		<version>9</version>
-	</parent>
-
 	<url>http://github.com/rainu/ClipSync</url>
 
 	<licenses>
