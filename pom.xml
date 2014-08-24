@@ -74,6 +74,24 @@
 							<appendAssemblyId>false</appendAssemblyId>
 						</configuration>
 					</execution>
+					<execution>
+						<id>make-assembly</id>
+						<!-- this is used for inheritance merges -->
+						<phase>package</phase>
+						<!-- bind to the install phase -->
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptors>
+								<descriptor>src/main/assembly/assembly-descriptor.xml</descriptor>
+							</descriptors>
+							<finalName>ClipSync-${project.version}</finalName>
+							<outputDirectory>target/</outputDirectory>
+							<workDirectory>target/assembly/work</workDirectory>
+						</configuration>
+
+					</execution>
 				</executions>
 			</plugin>
 			<plugin>
